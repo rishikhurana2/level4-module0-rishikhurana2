@@ -16,9 +16,11 @@ public class WorldPanel extends JPanel implements MouseListener, ActionListener 
 	private int cellsPerRow;
 	private int cellSize;
 	
-	//1. Create a 2D array of Cells. Do not initialize it.
-	private Cell[][] cells;
 	private Timer timer;
+	
+	//1. Create a 2D array of Cells. Do not initialize it.
+
+	
 	
 	public WorldPanel(int w, int h, int cpr) {
 		setPreferredSize(new Dimension(w, h));
@@ -45,6 +47,7 @@ public class WorldPanel extends JPanel implements MouseListener, ActionListener 
 	
 	public void clearCells() {
 		//5. Iterated through the cells and set them all to dead.
+		
 		repaint();
 	}
 	
@@ -64,6 +67,9 @@ public class WorldPanel extends JPanel implements MouseListener, ActionListener 
 	public void paintComponent(Graphics g) {
 		//6. Iterate through the cells and draw them all
 		
+		
+		
+		// draws grid
 		g.setColor(Color.BLACK);
 		g.drawRect(0, 0, getWidth() - 1, getHeight() - 1);
 	}

@@ -50,8 +50,5 @@ public class Cell implements Drawable{
 		
 		
 		
-		//border
-		g.setColor(Color.BLACK);
-		g.drawRect(x, y, cellSize, cellSize);
 	}
 }

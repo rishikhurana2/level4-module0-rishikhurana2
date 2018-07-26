@@ -7,7 +7,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 
-/*Complete the steps in the PychodelicDigitalPainting class*/
+/*Complete the steps in the CrazyDigitalPainting class*/
 
 public class ColorArrayDisplayer {
 	public static void displayColorsAsImage(Color[][] colors) {

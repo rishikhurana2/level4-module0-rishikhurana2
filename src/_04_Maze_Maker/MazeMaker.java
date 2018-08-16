@@ -45,6 +45,8 @@ public class MazeMaker{
 			//C3. remove the wall between the two cells
 
 			//C4. make the new cell the current cell and mark it as visited
+		
+			//C5. call the selectNextPath method with the current cell
 			
 			
 		//D. if all neighbors are visited

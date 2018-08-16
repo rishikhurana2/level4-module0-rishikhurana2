@@ -54,6 +54,8 @@ public class MazeMaker{
 				// D1a. pop a cell from the stack
 		
 				// D1b. make that the current cell
+		
+				// D1c. call the selectNextPath method with the current cell
 				
 			
 		

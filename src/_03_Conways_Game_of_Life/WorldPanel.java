@@ -46,7 +46,7 @@ public class WorldPanel extends JPanel implements MouseListener, ActionListener 
 	}
 	
 	public void clearCells() {
-		//5. Iterated through the cells and set them all to dead.
+		//5. Iterate through the cells and set them all to dead.
 		
 		repaint();
 	}
@@ -76,8 +76,9 @@ public class WorldPanel extends JPanel implements MouseListener, ActionListener 
 	
 	//advances world one step
 	public void step() {
-		//7. iterate through cells and get their neighbors
-	
+		//7. iterate through cells and fill in the livingNeighbors array
+		// . using the getLivingNeighbors method.
+		int[][] livingNeighbors = new int[cellsPerRow][cellsPerRow];
 		
 		//8. check if each cell should live or die
 	

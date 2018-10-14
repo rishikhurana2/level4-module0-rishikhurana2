@@ -17,7 +17,7 @@ public class Cell implements Drawable {
 		this.cellSize = size;
 	}
 
-//	Cell c = new Cell(x, y, cellSize);
+	//Cell c = new Cell(x, y, cellSize);
 
 	// 11. Complete tue liveOrDie method
 	// It sets isAlive to true or false based on the neighbors and
@@ -30,7 +30,7 @@ public class Cell implements Drawable {
 	 * neighbours becomes a live cell, as if by reproduction. (source: Wikipedia)
 	 */
 	public void liveOrDie(int numNeighbors) {
-		
+	//	if ()
 	}
 
 	public int getX() {

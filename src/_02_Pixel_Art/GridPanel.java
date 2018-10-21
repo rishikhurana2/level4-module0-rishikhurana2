@@ -52,7 +52,7 @@ public class GridPanel extends JPanel {
 		// of the pixel that was clicked. *HINT* Use the pixel's dimensions.
 		for (int i = 0; i < pixels.length; i++) {
 			for (int j = 0; j < pixels[i].length; j++) {
-				setColor(new Color(mouseX/pixelWidth, mouseY/pixelHeight,));
+				// setColor(new Color(mouseX / pixelWidth, mouseY / pixelHeight));
 			}
 		}
 	}

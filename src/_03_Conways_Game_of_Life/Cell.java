@@ -17,7 +17,7 @@ public class Cell implements Drawable {
 		this.cellSize = size;
 	}
 
-	//Cell c = new Cell(x, y, cellSize);
+	// Cell c = new Cell(x, y, cellSize);
 
 	// 11. Complete tue liveOrDie method
 	// It sets isAlive to true or false based on the neighbors and
@@ -30,7 +30,18 @@ public class Cell implements Drawable {
 	 * neighbours becomes a live cell, as if by reproduction. (source: Wikipedia)
 	 */
 	public void liveOrDie(int numNeighbors) {
-	//	if ()
+		if (numNeighbors < 2) {
+			isAlive = false;
+		}
+		if (numNeighbors == 2 || numNeighbors == 3) {
+			isAlive = true;
+		}
+		if (numNeighbors > 3) {
+			isAlive = false;
+		}
+		if (numNeighbors == 3 && isAlive == false) {
+			isAlive = true;
+		}
 	}
 
 	public int getX() {
@@ -46,6 +57,15 @@ public class Cell implements Drawable {
 	// draws empty square if cell is dead
 	@Override
 	public void draw(Graphics g) {
-		
+		System.out.println("drawn alive");
+
+		if (isAlive) {
+			g.setColor(Color.BLACK);
+			g.drawRect(getX() * cellSize, getY() * cellSize, cellSize, cellSize);
+		}
+		if (!isAlive) {
+			g.setColor(Color.YELLOW);
+			g.drawRect(getX() * cellSize, getY() * cellSize, cellSize, cellSize);
+		}
 	}
 }

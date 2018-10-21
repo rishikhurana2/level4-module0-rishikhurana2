@@ -35,7 +35,7 @@ public class MazeMaker {
 		// A. mark cell as visited
 		currentCell.setBeenVisited(true);
 		// B. check for unvisited neighbors using the cell
-		if (!currentCell.hasBeenVisited()) {
+		// if (!currentCell.hasBeenVisited())
 		// C. if has unvisited neighbors,
 
 		// C1. select one at random.

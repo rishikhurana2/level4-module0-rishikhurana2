@@ -11,9 +11,11 @@ public class MazeMaker {
 
 	private static Maze maze;
 
+	static boolean unvisitedNeighbors = false;
+	
 	private static Random randGen = new Random();
 	private static Stack<Cell> uncheckedCells = new Stack<Cell>();
-
+	
 	public static Maze generateMaze(int w, int h) {
 		width = w;
 		height = h;
@@ -35,28 +37,28 @@ public class MazeMaker {
 		// A. mark cell as visited
 		currentCell.setBeenVisited(true);
 		// B. check for unvisited neighbors using the cell
-		// if (!currentCell.hasBeenVisited())
+		if (!currentCell.hasBeenVisited()) {
+			unvisitedNeighbors = !currentCell.hasBeenVisited();
+		}
 		// C. if has unvisited neighbors,
+			// C1. select one at random.
+				
+			// C2. push it to the stack
 
-		// C1. select one at random.
+			// C3. remove the wall between the two cells
 
-		// C2. push it to the stack
+			// C4. make the new cell the current cell and mark it as visited
 
-		// C3. remove the wall between the two cells
-
-		// C4. make the new cell the current cell and mark it as visited
-
-		// C5. call the selectNextPath method with the current cell
-
+			// C5. call the selectNextPath method with the current cell
 		// D. if all neighbors are visited
 
-		// D1. if the stack is not empty
+			// D1. if the stack is not empty
 
-		// D1a. pop a cell from the stack
+				// D1a. pop a cell from the stack
 
-		// D1b. make that the current cell
+				// D1b. make that the current cell
 
-		// D1c. call the selectNextPath method with the current cell
+				// D1c. call the selectNextPath method with the current cell
 
 	}
 

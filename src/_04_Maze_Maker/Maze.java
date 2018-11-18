@@ -7,9 +7,7 @@ public class Maze {
 	Cell[][] cells;
 	private int width;
 	private int height;
-	Cell c;
-	
-	
+
 	public Maze(int w, int h) {
 		this.width = w;
 		this.height = h;
@@ -36,14 +34,7 @@ public class Maze {
 
 	// 4b. This method returns the selected cell.
 	public Cell getCell(int x, int y) {
-		for (int i = 0; i < cells.length; i++) {
-			for (int j = 0; j < cells[i].length; j++) {
-				if (cells[i][j].getX() == x) {
-					c = cells[i][j];
-				}
-			}
-		}
-		return c;
+		return cells[x][y];
 	}
 
 	public int getWidth() {
